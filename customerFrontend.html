@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 3</title>
+        <link href="style.css"
+        rel="stylesheet"
+        type="text/css"/>
+    </head>
+    <body>
+        <h1>EECS448 Lab6 Exercise 3</h1>
+        <button><a href="index.html">Home</a></button>
+
+        <h2>Mountain Climbing Equipment Store</h2>
+        <form id="shop" method="get" onsubmit="return validate()" action="customerBackend.php">
+            <label for="username">Username: </label>
+            <input id="username" name="username" type="email"><br>
+            <label for="password">Password: </label>
+            <input id="password" name="password" type="password">
+
+            <h4>Select Items</h4>
+            <input id="helmet" value="0" type="number" min="0" name="helmet" class="items">
+            <label for="helmet">Climbing Helmet</label><br>
+            <input id="shoes" value="0" type="number" min="0" name="shoes" class="items">
+            <label for="shoes">Climbing Shoes</label><br>
+            <input id="biner" value="0" type="number" min="0" name="biner" class="items">
+            <label for="biner">Carabiner</label><br>
+            <input id="rope" value="0" type="number" min="0" name="rope" class="items">
+            <label for="rope">Rope (35m)</label><br>
+
+            <h4>Shipping Options</h4>
+            <input id="sevenDay" value="Free 7 Day" type='radio' name="shipping">
+            <label for="sevenDay">Free 7 Day</label><br>
+            <input id="threeDay" value="$5.00 Three Day" type="radio" name="shipping">
+            <label for="threeDay">$5.00 Three Day</label><br>
+            <input id="overNight" value="$50.00 Over Night" type="radio" name="shipping">
+            <label for="overNight">$50.00 Over Night</label><br>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+
+        
+
+        <script src="formChecker.js"></script>
+    </body>
+</html>

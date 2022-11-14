@@ -1,0 +1,21 @@
+form
+{
+    background-color: skyblue;  
+}
+
+table, td
+{
+    border: 1px solid;
+    background-color: burlywood;
+}
+
+th
+{
+    border: 1px solid;
+    background-color: chocolate;
+}
+
+body
+{
+    background-color: forestgreen;
+}
